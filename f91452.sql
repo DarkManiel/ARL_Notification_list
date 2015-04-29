@@ -27,7 +27,7 @@ prompt APPLICATION 91452 - ARL App
 -- Application Export:
 --   Application:     91452
 --   Name:            ARL App
---   Date and Time:   00:23 Wednesday April 29, 2015
+--   Date and Time:   16:37 Wednesday April 29, 2015
 --   Exported By:     THEFAKEMARKDANIEL@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -41,7 +41,7 @@ prompt APPLICATION 91452 - ARL App
 --     Validations:              2
 --     Processes:               21
 --     Regions:                 37
---     Buttons:                 44
+--     Buttons:                 43
 --     Dynamic Actions:         19
 --   Shared Components:
 --     Logic:
@@ -111,7 +111,7 @@ wwv_flow_api.create_flow(
 ,p_csv_encoding=>'Y'
 ,p_auto_time_zone=>'N'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428214315'
+,p_last_upd_yyyymmddhh24miss=>'20150429065526'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -9250,7 +9250,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428035306'
+,p_last_upd_yyyymmddhh24miss=>'20150429063500'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(2593111362368589027)
@@ -9863,7 +9863,6 @@ wwv_flow_api.create_page_item(
 ,p_name=>'P1_SEARCH'
 ,p_item_sequence=>10
 ,p_item_plug_id=>wwv_flow_api.id(2734703875109962539)
-,p_use_cache_before_default=>'NO'
 ,p_prompt=>'Search'
 ,p_placeholder=>'Search employees'
 ,p_display_as=>'NATIVE_TEXT_FIELD'
@@ -9991,7 +9990,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428025529'
+,p_last_upd_yyyymmddhh24miss=>'20150429063214'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(2595459472937729012)
@@ -10015,6 +10014,8 @@ wwv_flow_api.create_page_plug(
 ''))
 ,p_plug_source_type=>'NATIVE_IR'
 ,p_plug_query_row_template=>1
+,p_plug_display_condition_type=>'EXISTS'
+,p_plug_display_when_condition=>'SELECT * FROM member WHERE member_id = :P1_LOGIN AND status <> 0'
 );
 wwv_flow_api.create_worksheet(
  p_id=>wwv_flow_api.id(2595459739356729013)
@@ -10214,8 +10215,10 @@ wwv_flow_api.create_page_item(
 ,p_cHeight=>1
 ,p_label_alignment=>'RIGHT'
 ,p_field_alignment=>'LEFT-CENTER'
+,p_display_when_type=>'NEVER'
 ,p_field_template=>wwv_flow_api.id(2593103546939588318)
 ,p_item_template_options=>'#DEFAULT#'
+,p_lov_display_extra=>'YES'
 ,p_attribute_01=>'Y'
 ,p_attribute_02=>'VALUE'
 ,p_attribute_04=>'Y'
@@ -10504,12 +10507,11 @@ wwv_flow_api.create_page(
  p_id=>4
 ,p_user_interface_id=>wwv_flow_api.id(2593109303654588949)
 ,p_name=>'Create New List'
-,p_page_mode=>'NORMAL'
+,p_page_mode=>'MODAL'
 ,p_step_title=>'Create New List'
 ,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
 ,p_first_item=>'NO_FIRST_ITEM'
 ,p_javascript_code=>'var htmldb_delete_message=''"DELETE_CONFIRM_MSG"'';'
-,p_page_template_options=>'#DEFAULT#'
 ,p_dialog_chained=>'Y'
 ,p_overwrite_navigation_list=>'N'
 ,p_page_is_public_y_n=>'N'
@@ -10518,7 +10520,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428032002'
+,p_last_upd_yyyymmddhh24miss=>'20150429062555'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(2595441579383727950)
@@ -10770,8 +10772,10 @@ wwv_flow_api.create_page_item(
 ,p_cMaxlength=>255
 ,p_cHeight=>1
 ,p_label_alignment=>'RIGHT'
+,p_display_when_type=>'NEVER'
 ,p_field_template=>wwv_flow_api.id(2593103546939588318)
 ,p_item_template_options=>'#DEFAULT#'
+,p_lov_display_extra=>'YES'
 ,p_attribute_04=>'button'
 ,p_attribute_05=>'N'
 ,p_attribute_07=>'NONE'
@@ -11299,7 +11303,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150426221716'
+,p_last_upd_yyyymmddhh24miss=>'20150429065526'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3542832749478590548)
@@ -11538,6 +11542,8 @@ wwv_flow_api.create_page_item(
 ,p_item_sequence=>80
 ,p_item_plug_id=>wwv_flow_api.id(3542832749478590548)
 ,p_use_cache_before_default=>'NO'
+,p_item_default=>':P1_LOGIN'
+,p_item_default_type=>'PLSQL_EXPRESSION'
 ,p_prompt=>'Member Id'
 ,p_source=>'MEMBER_ID'
 ,p_source_type=>'DB_COLUMN'
@@ -11548,6 +11554,7 @@ wwv_flow_api.create_page_item(
 ,p_label_alignment=>'RIGHT'
 ,p_field_template=>wwv_flow_api.id(2593103895246588467)
 ,p_item_template_options=>'#DEFAULT#'
+,p_lov_display_extra=>'YES'
 ,p_attribute_03=>'right'
 );
 wwv_flow_api.create_page_process(
@@ -12081,7 +12088,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428214315'
+,p_last_upd_yyyymmddhh24miss=>'20150429011009'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3434061128300682322)
@@ -12107,12 +12114,12 @@ wwv_flow_api.create_page_plug(
 '      ,null as tooltip',
 '      ,null as link ',
 '  from (',
-'   select l.list_id         identity',
+'   select l.list_id       identity',
 '         ,null              parent_id',
 '         ,l.name            name',
 '    from list l',
 '   union',
-'   select lm.member_id',
+'   select lm.member_id ',
 '         ,lm.list_list_id',
 '         ,null',
 '     from list_member lm',
@@ -12488,7 +12495,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150427024528'
+,p_last_upd_yyyymmddhh24miss=>'20150429063946'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3526055591159530597)
@@ -12663,19 +12670,6 @@ wwv_flow_api.create_page_button(
 ,p_button_redirect_url=>'f?p=&APP_ID.:8:&SESSION.::&DEBUG.:8'
 ,p_grid_new_grid=>false
 );
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(3550456854958296146)
-,p_button_sequence=>40
-,p_button_plug_id=>wwv_flow_api.id(3542845994601590889)
-,p_button_name=>'IMPORT_CSV'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(2593104130644588682)
-,p_button_image_alt=>'Import CSV'
-,p_button_position=>'TOP'
-,p_button_redirect_url=>'f?p=&APP_ID.:13:&SESSION.::&DEBUG.:::'
-,p_grid_new_grid=>false
-);
 wwv_flow_api.create_page_da_event(
  p_id=>wwv_flow_api.id(3555502336738186912)
 ,p_name=>'DOWNLOAD FILES'
@@ -12690,7 +12684,7 @@ wwv_flow_api.create_page_da_action(
 ,p_event_id=>wwv_flow_api.id(3555502336738186912)
 ,p_event_result=>'TRUE'
 ,p_action_sequence=>10
-,p_execute_on_page_init=>'Y'
+,p_execute_on_page_init=>'N'
 ,p_action=>'NATIVE_JAVASCRIPT_CODE'
 ,p_affected_elements_type=>'BUTTON'
 ,p_affected_button_id=>wwv_flow_api.id(3555465087514169958)
@@ -14785,18 +14779,18 @@ wwv_flow_api.create_page(
  p_id=>20
 ,p_user_interface_id=>wwv_flow_api.id(2593109303654588949)
 ,p_name=>'New List Setup'
-,p_page_mode=>'NORMAL'
+,p_page_mode=>'MODAL'
 ,p_step_title=>'New List Setup'
 ,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
 ,p_first_item=>'NO_FIRST_ITEM'
-,p_page_template_options=>'#DEFAULT#'
 ,p_dialog_chained=>'Y'
 ,p_overwrite_navigation_list=>'N'
 ,p_page_is_public_y_n=>'N'
 ,p_cache_mode=>'NOCACHE'
+,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'THEFAKEMARKDANIEL@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150428014436'
+,p_last_upd_yyyymmddhh24miss=>'20150429054438'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3665002919242458118)
@@ -14824,6 +14818,14 @@ wwv_flow_api.create_page_button(
 ,p_button_image_alt=>'Add members'
 ,p_button_position=>'TOP'
 ,p_grid_new_grid=>false
+);
+wwv_flow_api.create_page_branch(
+ p_id=>wwv_flow_api.id(3802750498287539125)
+,p_branch_name=>'Leave modal'
+,p_branch_action=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.:::'
+,p_branch_point=>'AFTER_PROCESSING'
+,p_branch_type=>'REDIRECT_URL'
+,p_branch_sequence=>10
 );
 wwv_flow_api.create_page_item(
  p_id=>wwv_flow_api.id(3665264174748474384)
