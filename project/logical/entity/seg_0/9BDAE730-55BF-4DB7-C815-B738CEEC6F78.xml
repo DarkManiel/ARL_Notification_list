@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BDAE730-55BF-4DB7-C815-B738CEEC6F78" name="list_member">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 21:57:33 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_member_id" id="E04EEAF9-8617-EBAF-22FB-2970B7D62C45">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 21:57:53 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id_1" id="716B9D58-BC89-7142-2BE6-570BBF3C0AA4">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 21:58:31 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_id" id="32D340C8-7BE8-4DBB-9DA1-1B29E8D97970">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 21:58:57 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="date_added" id="BFC81760-D6D9-BE19-718F-0F0549000E33">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:00:50 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="list_id1" id="79C37E25-18B9-16B9-5CB8-C98DBE38E6F5">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:59:53 UTC</createdTime>
+<generatorID>0B8BCFAA-A294-E445-FAC3-B74B61197BF2</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4F6EAB21-B3C3-D592-1624-8BE0E877EF3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id" id="60C48483-F52A-CC3F-501D-E4352268F68A">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 23:07:34 UTC</createdTime>
+<generatorID>2A8920ED-E195-5783-DECE-CB513CCD25E0</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B75A18DD-57A7-EDAE-73A2-A80D0DECBC4C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F565A59-2A91-CFCA-2B92-F3D51B70C946" name="{entity} PK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 21:58:24 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E04EEAF9-8617-EBAF-22FB-2970B7D62C45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

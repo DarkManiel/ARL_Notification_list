@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="236F3112-F5FE-0D72-603C-E481A1061804" name="employee">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>50D8685A-51C7-1330-F274-62BD8104BC4A</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employeee_id" id="219D6055-DC1F-BF27-3E8C-4A29DE8761E6">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>B75A18DD-57A7-EDAE-73A2-A80D0DECBC4C</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="1C40BAD3-F97F-ECBD-E5DC-DFB11496D636">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>899CEE3D-93C4-E7BB-6AC8-FE0C2ED8C091</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5B7721F5-54F4-C6EC-19EC-F077F7D7CB25">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>AD5975FE-07B1-6F48-D4E0-B5E893FDD0D4</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab" id="6A62238E-61AC-7300-92D5-B571895063DD">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>02B265B2-3E70-1D8C-6C37-72ECFF0F7488</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="division" id="1E3AA6BE-E306-FEB1-84AF-8BB165254BC0">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>016604B5-9A29-5B52-2534-D4A2C2E2875B</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="03CBA5AC-5AAA-CF85-0FA7-4FCBDDA9CD75">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>EE73866B-1BD6-8676-6288-AD93F9C96E45</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2376D8D-B5AE-E169-7595-410BEB145EDB" name="employee_PK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>D2C95FC7-4DCC-65D3-94E5-B9725F8EC3C0</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="219D6055-DC1F-BF27-3E8C-4A29DE8761E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

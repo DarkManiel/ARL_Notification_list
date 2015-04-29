@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC05D992-68BA-E988-46A4-13411DE0BECF" name="Relation_3">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_user_id" id="A86E43AC-44DC-C672-DE89-301C616E6663">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>219D6055-DC1F-BF27-3E8C-4A29DE8761E6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85C21FD9-1589-40A1-68BE-523AE7CC0EB1" referredColumn="219D6055-DC1F-BF27-3E8C-4A29DE8761E6"/>
+</associations>
+</Column>
+<Column name="list_member_list_member_id" id="1F8DB83D-C6F1-70C5-2ADD-6A08174F1751">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CAC34962-FB71-E0B9-E033-94BF7C33D6BE</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B327928-5D0B-B44A-BF08-66257E3BFAF7" referredColumn="CAC34962-FB71-E0B9-E033-94BF7C33D6BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDC5A1A3-950B-427F-22D4-E7E67EA344E7" name="Relation_3_PK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A86E43AC-44DC-C672-DE89-301C616E6663"/>
+<colUsage columnID="1F8DB83D-C6F1-70C5-2ADD-6A08174F1751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E68E5A42-3052-8890-E48C-7DF24FC39DEF" name="FK_ASS_1">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>ED04D27F-0A5A-A14F-831C-11BDA247A98A</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A86E43AC-44DC-C672-DE89-301C616E6663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6675F863-B4EA-7D20-A234-08AFA95227A2" name="FK_ASS_2">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>ED04D27F-0A5A-A14F-831C-11BDA247A98A</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F8DB83D-C6F1-70C5-2ADD-6A08174F1751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

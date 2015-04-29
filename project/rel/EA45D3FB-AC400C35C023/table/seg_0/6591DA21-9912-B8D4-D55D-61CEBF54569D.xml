@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6591DA21-9912-B8D4-D55D-61CEBF54569D" name="list_employee">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>9BDAE730-55BF-4DB7-C815-B738CEEC6F78</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="list_member_id" id="CAC34962-FB71-E0B9-E033-94BF7C33D6BE">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>E04EEAF9-8617-EBAF-22FB-2970B7D62C45</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="6ED154A9-D82D-9E31-BFD9-8386F8CE6845">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>716B9D58-BC89-7142-2BE6-570BBF3C0AA4</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_id" id="85C29C69-21FA-8B45-367A-F82A96A4235B">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>32D340C8-7BE8-4DBB-9DA1-1B29E8D97970</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_added" id="C6814ECB-F419-E082-5E86-C6192435E7F6">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>BFC81760-D6D9-BE19-718F-0F0549000E33</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_list_id" id="745FA184-D0C1-3261-9161-E36C7F84AC6C">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 23:17:48 UTC</createdTime>
+<generatorID>79C37E25-18B9-16B9-5CB8-C98DBE38E6F5</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D4F634CF-8A48-8999-76C3-A6F22D8139E9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="622A3324-25F3-EFB2-62DC-0D8849C18074" referredColumn="D4F634CF-8A48-8999-76C3-A6F22D8139E9"/>
+</associations>
+</Column>
+<Column name="employee_employeee_id" id="E9815B95-3FD1-6C57-1993-EE11C2FEF528">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 23:17:48 UTC</createdTime>
+<generatorID>60C48483-F52A-CC3F-501D-E4352268F68A</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>219D6055-DC1F-BF27-3E8C-4A29DE8761E6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85AAF901-03A1-895C-F419-FBDF5CFD3617" referredColumn="219D6055-DC1F-BF27-3E8C-4A29DE8761E6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE99765B-EC8B-477B-FA7A-7F540F5338CC" name="list_member_PK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 22:48:08 UTC</createdTime>
+<generatorID>9F565A59-2A91-CFCA-2B92-F3D51B70C946</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAC34962-FB71-E0B9-E033-94BF7C33D6BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D74549D-D5B9-C372-F291-011C241687D7" name="list_member_employee_FK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 23:17:48 UTC</createdTime>
+<generatorID>2A8920ED-E195-5783-DECE-CB513CCD25E0</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9815B95-3FD1-6C57-1993-EE11C2FEF528"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="441C5A57-E0AC-2A02-F588-A2C5E2877269" name="list_member_list_FK">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-03-30 23:17:48 UTC</createdTime>
+<generatorID>0B8BCFAA-A294-E445-FAC3-B74B61197BF2</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="745FA184-D0C1-3261-9161-E36C7F84AC6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

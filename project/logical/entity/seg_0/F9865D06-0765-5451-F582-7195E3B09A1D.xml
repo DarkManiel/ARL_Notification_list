@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9865D06-0765-5451-F582-7195E3B09A1D" name="Document">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:26:47 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="1EB4BEF9-C2A9-E3AC-61CF-729E6D4F7D82">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:26:57 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="0EEA8CBD-8EEF-A099-386A-8D75593328D7">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:27:22 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="FA1189B7-2514-39F4-0DC3-75CF841F68B0">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:27:36 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="770E4057-3C12-AAEC-5FF8-608999954720">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:28:00 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_charset" id="6A7427E7-A54D-BE9A-758B-ADCEB0CFF052">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:31:17 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_comments" id="5DFCAFB2-8406-6F35-226E-B4567A24AA40">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:31:39 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="tags" id="D432926E-4F7F-444F-F646-B312A48CCA8D">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:31:55 UTC</createdTime>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="member_id" id="E8982445-1354-954C-F431-8BC9CBAEFD8D">
+<createdBy>markdaniel</createdBy>
+<createdTime>2015-04-29 16:33:14 UTC</createdTime>
+<generatorID>B9F5B7D2-8E35-025B-CBA6-10E5642BC7E1</generatorID>
+<ownerDesignName>project</ownerDesignName>
+<engineerTo>
+<item key="EA45D3FB-73CC-2B87-F4DB-AC400C35C023" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B75A18DD-57A7-EDAE-73A2-A80D0DECBC4C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>
